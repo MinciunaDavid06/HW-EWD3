@@ -1,0 +1,29 @@
+Paragraful A primește stilurile de la selectorul p, deoarece nu are nici clasă, nici id. Fiind un element selector, primește proprietățile generale pentru paragrafe: culoare gri, font Georgia, dimensiune 1rem, spațiere și padding.
+
+Paragraful B primește stiluri atât de la p, cât și de la .info. Selectorul .info are prioritate mai mare decât p, deoarece este class selector. De aceea, proprietățile precum culoarea steelblue, fundalul, bordura, dimensiunea fontului și padding-ul sunt luate din .info, iar restul pot rămâne din p.
+
+Paragraful C primește stiluri de la p și de la #warning. Selectorul #warning are prioritate mai mare, fiind ID selector. Astfel, paragraful va avea culoarea darkred, font italic, text cu litere mari, bordură punctată, fundal deschis și font de tip Courier New.
+
+Paragraful D primește proprietăți de la mai mulți selectori: p, .info, #warning și #warning.info. Cel mai specific selector este #warning.info, deoarece combină un id cu o clasă. Din acest motiv, culoarea finală va fi darkorange, iar stilurile declarate acolo le suprascriu pe cele mai slabe.
+
+Pentru paragraful D, mai mulți selectori definesc proprietatea color:
+
+p → gray
+.info → steelblue
+#warning → darkred
+#warning.info → darkorange
+
+Browserul alege darkorange, deoarece #warning.info are specificitate mai mare decât ceilalți selectori.
+
+În cazul fontului, .info setează Arial, iar #warning setează Courier New. Se aplică Courier New, deoarece selectorul cu id are prioritate mai mare decât selectorul de clasă.
+
+Pentru h1, stilurile vin atât din fișierul extern style.css, cât și din CSS-ul intern din pagina HTML.
+
+Din CSS-ul extern se aplică proprietăți precum:
+
+font-style: italic;
+padding: 10px;
+
+Totuși, culoarea este luată din CSS-ul intern, deoarece regula internă este încărcată după cea externă și suprascrie valoarea pentru color.
+
+Astfel, h1 va avea culoarea blue, dar va păstra și stilurile din fișierul extern, cum ar fi fontul italic și padding-ul.

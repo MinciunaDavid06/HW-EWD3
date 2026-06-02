@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Projects | Minciuna David-Florian</title>
+    <meta name="description" content="Accessible portfolio page where users can add and display personal projects.">
+    <link rel="stylesheet" href="style.css">
+    <script src="portfolio.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header compact-header portfolio-hero">
+        <div class="container">
+            <p class="eyebrow">Interactive Portfolio</p>
+            <h1>Portfolio Projects</h1>
+            <p class="hero-text">
+                Add your own personal projects using an accessible form and display them instantly in a responsive table.
+            </p>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="CV.html">CV+Portofolio</a>
+        <a href="card.html">Business Card</a>
+        <a href="Proiecte.html">Projects</a>
+        <a href="overview.html">Overview</a>
+        <a href="contact.html">Contact</a>
+        <a href="chatbot.html">ChatBot</a>
+    </nav>
+
+    <main id="main-content" class="container portfolio-layout">
+        <section class="card portfolio-intro" aria-labelledby="intro-title">
+            <p class="section-label">Homework 3</p>
+            <h2 id="intro-title">Accessible project manager</h2>
+            <p>
+                This page was created using HTML5, CSS3 and vanilla JavaScript. It includes semantic structure,
+                client-side validation, accessible error messages, lazy-loaded images and a responsive table.
+            </p>
+
+           <div class="portfolio-stats">
+                <article>
+                    <h2>5+</h2>
+                    <span>Input types</span>
+                </article>
+                <article>
+                    <h2>95+</h2>
+                    <span>Accessibility target</span>
+                </article>
+                <article>
+                    <h2>100%</h2>
+                    <span>Vanilla JS</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="card portfolio-form-card" aria-labelledby="form-title">
+            <h2 id="form-title">Add a new project</h2>
+            <p class="form-help">
+                Complete the form below. Required fields are marked with *.
+            </p>
+
+            <form id="project-form" novalidate>
+                <fieldset>
+                    <legend>Project details</legend>
+
+                    <div class="form-group">
+                        <label for="project-name">Project name *</label>
+                        <input
+                            type="text"
+                            id="project-name"
+                            name="projectName"
+                            autocomplete="off"
+                            aria-describedby="project-name-help project-name-error"
+                        >
+                        <p id="project-name-help" class="input-help">Enter at least 3 characters.</p>
+                        <p id="project-name-error" class="error-message" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-description">Description *</label>
+                        <textarea
+                            id="project-description"
+                            name="projectDescription"
+                            rows="5"
+                            aria-describedby="project-description-help project-description-error"
+                        ></textarea>
+                        <p id="project-description-help" class="input-help">Enter at least 15 characters.</p>
+                        <p id="project-description-error" class="error-message" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-url">Project URL *</label>
+                        <input
+                            type="url"
+                            id="project-url"
+                            name="projectUrl"
+                            placeholder="https://example.com"
+                            aria-describedby="project-url-help project-url-error"
+                        >
+                        <p id="project-url-help" class="input-help">The link must start with https://</p>
+                        <p id="project-url-error" class="error-message" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-tech">Main technology *</label>
+                        <select
+                            id="project-tech"
+                            name="projectTech"
+                            aria-describedby="project-tech-error"
+                        >
+                            <option value="">Choose a technology</option>
+                            <option value="HTML5">HTML5</option>
+                            <option value="CSS3">CSS3</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Python">Python</option>
+                            <option value="C++">C++</option>
+                        </select>
+                        <p id="project-tech-error" class="error-message" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-date">Completion date *</label>
+                        <input
+                            type="date"
+                            id="project-date"
+                            name="projectDate"
+                            aria-describedby="project-date-error"
+                        >
+                        <p id="project-date-error" class="error-message" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-image">Image URL</label>
+                        <input
+                            type="url"
+                            id="project-image"
+                            name="projectImage"
+                            placeholder="https://example.com/image.jpg"
+                            aria-describedby="project-image-help project-image-error"
+                        >
+                        <p id="project-image-help" class="input-help">
+                            Optional. If empty, a default thumbnail will be used.
+                        </p>
+                        <p id="project-image-error" class="error-message" aria-live="polite"></p>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit">Add project</button>
+                    <button type="reset" class="secondary-button">Reset form</button>
+                </div>
+
+                <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="card portfolio-table-card" aria-labelledby="table-title">
+            <h2 id="table-title">Submitted projects</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <caption>Projects submitted through the portfolio form</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Thumbnail</th>
+                            <th scope="col">Project name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">URL</th>
+                            <th scope="col">Technology</th>
+                            <th scope="col">Completion date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="projects-table-body">
+                        <tr>
+                            <td>
+                                <img
+                                    src="https://via.placeholder.com/120x80/ff7a66/1d1216?text=Game"
+                                    alt="Thumbnail for Game Console Manager project"
+                                    class="project-thumb"
+                                    loading="lazy"
+                                    width="120"
+                                    height="80"
+                                >
+                            </td>
+                            <td>Game Console Manager</td>
+                            <td>A console-style program for checking, installing and uninstalling games.</td>
+                            <td>
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                    View project
+                                </a>
+                            </td>
+                            <td>C++</td>
+                            <td>2026-05-20</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img
+                                    src="https://via.placeholder.com/120x80/ffc2b6/1d1216?text=Web"
+                                    alt="Thumbnail for Personal Portfolio project"
+                                    class="project-thumb"
+                                    loading="lazy"
+                                    width="120"
+                                    height="80"
+                                >
+                            </td>
+                            <td>Personal Portfolio</td>
+                            <td>A multi-page website presenting my CV, projects, overview and contact page.</td>
+                            <td>
+                                <a href="index.html">View page</a>
+                            </td>
+                            <td>HTML5</td>
+                            <td>2026-06-01</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>2026 · Minciuna David-Florian · FI UVT</p>
+    </footer>
+</body>
+</html>

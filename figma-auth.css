@@ -1,0 +1,340 @@
+/* © 2026 Davids University of Timisoara | Data Digitalization and Analysis */
+
+position: absolute;
+width: 418px;
+height: 12px;
+left: 237px;
+bottom: 21px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 122.23%;
+/* or 15px */
+text-align: center;
+
+color: #FFC2B6;
+
+
+
+/* Rectangle 7 */
+
+position: absolute;
+width: 827px;
+height: 462px;
+left: -2px;
+top: 36px;
+
+background: #1D1216;
+box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+border-radius: 30px;
+
+
+/* Rectangle 1 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 832px;
+height: 462px;
+left: calc(50% - 832px/2 - 11.5px);
+top: calc(50% - 462px/2 - 3.5px);
+
+background: #FF7A66;
+border: 1px solid #000000;
+border-radius: 30px;
+
+
+/* Pozica */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 461px;
+height: 572px;
+left: 409px;
+top: -70px;
+
+background: url(Asta.jpg);
+border: 1px solid #000000;
+
+
+/* Rectangle 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 224px;
+height: 27px;
+left: 109px;
+top: 225px;
+
+background: #FFFFFF;
+border: 1.5px solid #C7C7C7;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+
+
+/* Keep me logged in */
+
+position: absolute;
+width: 73px;
+height: 14px;
+left: 128px;
+top: 336px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 122.23%;
+/* or 10px */
+text-align: center;
+
+color: #404040;
+
+
+
+/* Rectangle 3 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 224px;
+height: 27px;
+left: 109px;
+top: 295px;
+
+background: #FFFFFF;
+border: 1.5px solid #C7C7C7;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+
+
+/* Email */
+
+position: absolute;
+width: 79px;
+height: 18px;
+left: 114px;
+top: 198px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 122.23%;
+/* or 18px */
+
+color: #FFC2B6;
+
+
+
+/* Parola */
+
+position: absolute;
+width: 79px;
+height: 18px;
+left: 114px;
+top: 268px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 122.23%;
+/* or 18px */
+
+color: #FFC2B6;
+
+
+
+/* david.minciuna06@e-uvt.ro */
+
+position: absolute;
+width: 135px;
+height: 15px;
+left: 115px;
+top: 232px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 122.23%;
+/* or 12px */
+text-align: center;
+
+color: #000000;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 12px;
+height: 12px;
+left: 111px;
+top: 335px;
+
+background: #FFC2B6;
+border-radius: 3px;
+
+
+/* Authentication Service: Web Design */
+
+position: absolute;
+width: 210px;
+height: 64px;
+left: 116px;
+top: 81px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 122.23%;
+/* or 29px */
+text-align: center;
+
+color: #FFC2B6;
+
+text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+
+
+/* Authenticate */
+
+position: absolute;
+width: 81px;
+height: 15px;
+left: 181px;
+top: 381px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 122.23%;
+/* identical to box height, or 15px */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Forgot your password ? */
+
+position: absolute;
+width: 94px;
+height: 14px;
+left: 243px;
+top: 336px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 8px;
+line-height: 122.23%;
+/* or 10px */
+text-align: center;
+
+color: #FF7A66;
+
+
+
+/* Rectangle 5 */
+
+position: absolute;
+width: 224px;
+height: 27px;
+left: 109px;
+top: 375px;
+
+background: #FF7A66;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+
+
+/* ******* */
+
+position: absolute;
+width: 43px;
+height: 15px;
+left: 116px;
+top: 302px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 122.23%;
+/* or 12px */
+text-align: center;
+
+color: #000000;
+
+
+
+/* LogoUVT 1 */
+
+position: absolute;
+width: 113px;
+height: 105px;
+left: 568px;
+top: calc(50% - 105px/2 - 97px);
+
+background: url(image_2026-05-10_210938412.png);
+
+
+/* Single login for access to all e-Deivid digital services */
+
+position: absolute;
+width: 189px;
+height: 18px;
+left: 125px;
+top: 449px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 122.23%;
+/* or 12px */
+text-align: center;
+
+color: #FFC2B6;
+
+
+
+/* Rectangle 6 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 234px;
+height: 29px;
+left: 513px;
+top: 363px;
+
+background: #FFC2B6;
+border: 1px solid #FFFFFF;
+
+
+/* David Intranet */
+
+position: absolute;
+width: 100px;
+height: 13px;
+left: 580px;
+top: 371px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 122.23%;
+/* or 13px */
+text-align: center;
+
+color: #FFFFFF;
+

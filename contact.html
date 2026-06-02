@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Minciuna David-Florian</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/ico" href="Eu.webp">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header compact-header">
+        <div class="container">
+            <p class="eyebrow">Contact</p>
+            <h1>Contact me</h1>
+            <p class="hero-text">Use the form below for feedback, project ideas or collaboration messages.</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="CV.html">CV+Portofolio</a>
+        <a href="card.html">Business Card</a>
+        <a href="Proiecte.html">Projects</a>
+        <a href="overview.html">Overview</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="chatbot.html">ChatBot</a>
+    </nav>
+
+    <main id="main-content" class="container contact-layout">
+        <section class="card contact-card">
+            <h2>Contact details</h2>
+            <ul class="clean-list">
+                <li>Email: <a href="mailto:david.minciuna06@e-uvt.ro">david.minciuna06@e-uvt.ro</a></li>
+                <li>Phone: 07n-amtelefon</li>
+            </ul>
+        </section>
+
+        <section class="card form-card">
+            <h2>Feedback form</h2>
+            <form method="get" action="#" aria-label="Contact form">
+                <fieldset>
+                    <legend>Your details</legend>
+                    <label for="name">Full name *</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your message</legend>
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Choose a topic</option>
+                        <option value="feedback">Website feedback</option>
+                        <option value="project">Project idea</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </fieldset>
+
+                <button type="submit">Send message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>2026 · Minciuna David-Florian</p>
+    </footer>
+</body>
+</html>

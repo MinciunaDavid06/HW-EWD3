@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Minciuna David-Florian</title>
+    <meta name="description" content="Portfolio projects page for Minciuna David-Florian.">
+    <link rel="stylesheet" href="style.css">
+    <script src="Portofolio.js" defer></script>
+    <link rel="icon" type="image/ico" href="Eu.webp">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header compact-header projects-hero">
+        <div class="container">
+            <p class="eyebrow">Project Showcase</p>
+            <h1>Projects</h1>
+            <p class="hero-text">
+                A portfolio space where I can present my current work and personal projects.
+            </p>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="CV.html">CV+Portofolio</a>
+        <a href="card.html">Business Card</a>
+        <a href="Proiecte.html" aria-current="page">Projects</a>
+        <a href="overview.html">Overview</a>
+        <a href="contact.html">Contact</a>
+        <a href="chatbot.html">ChatBot</a>
+    </nav>
+
+    <main id="main-content" class="container projects-layout">
+        <section class="card project-intro-card" aria-labelledby="project-intro-title">
+            <p class="section-label">Portfolio projects</p>
+            <h2 id="project-intro-title">My personal projects</h2>
+            <p>
+                This page presents a selection of projects created during my learning process,
+                using programming languages and web technologies such as HTML, CSS, JavaScript, Python and C.
+            </p>
+
+            <div class="project-highlights">
+                <span>Personal projects</span>
+                <span>Responsive table</span>
+                <span>Project thumbnails</span>
+                <span>Clean structure</span>
+            </div>
+        </section>
+
+        <section class="card portfolio-form-card cv-form-card" aria-labelledby="form-title">
+            <p class="section-label">Add project</p>
+            <h2 id="form-title">Add a new project</h2>
+            <p class="form-help">
+                Complete the form below. Required fields are marked with *.
+            </p>
+
+            <form id="project-form" novalidate>
+                <fieldset>
+                    <legend>Project details</legend>
+
+                    <div class="form-group">
+                        <label for="project-name">Project name *</label>
+                        <input
+                            type="text"
+                            id="project-name"
+                            name="projectName"
+                            autocomplete="off"
+                            aria-describedby="project-name-help project-name-error"
+                        >
+                        <p id="project-name-help" class="input-help">Enter at least 3 characters.</p>
+                        <p id="project-name-error" class="error-message" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-description">Description *</label>
+                        <textarea
+                            id="project-description"
+                            name="projectDescription"
+                            rows="5"
+                            aria-describedby="project-description-help project-description-error"
+                        ></textarea>
+                        <p id="project-description-help" class="input-help">Enter at least 15 characters.</p>
+                        <p id="project-description-error" class="error-message" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-url">Project URL *</label>
+                        <input
+                            type="url"
+                            id="project-url"
+                            name="projectUrl"
+                            placeholder="https://example.com"
+                            aria-describedby="project-url-help project-url-error"
+                        >
+                        <p id="project-url-help" class="input-help">The link must start with https://</p>
+                        <p id="project-url-error" class="error-message" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-tech">Main technology *</label>
+                        <select
+                            id="project-tech"
+                            name="projectTech"
+                            aria-describedby="project-tech-error"
+                        >
+                            <option value="">Choose a technology</option>
+                            <option value="HTML5">HTML5</option>
+                            <option value="CSS3">CSS3</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Python">Python</option>
+                            <option value="C++">C++</option>
+                            <option value="C">C</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <p id="project-tech-error" class="error-message" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-date">Completion date *</label>
+                        <input
+                            type="date"
+                            id="project-date"
+                            name="projectDate"
+                            aria-describedby="project-date-error"
+                        >
+                        <p id="project-date-error" class="error-message" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-image">Image *</label>
+                        <input
+                            type="file"
+                            id="project-image"
+                            name="projectImage"
+                            aria-describedby="project-image-help project-image-error"
+                            accept="image/*"
+                        >
+                        <p id="project-image-help" class="input-help">
+                            Optional. If empty, a default thumbnail will be used.
+                        </p>
+                        <p id="project-image-error" class="error-message" aria-live="polite"></p>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit">Add project</button>
+                    <button type="reset" class="secondary-button">Reset form</button>
+                </div>
+
+                <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="card table-card projects-table-card" aria-labelledby="table-title">
+            <h2 id="table-title">Project list</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <caption>Portfolio projects added to the page</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Thumbnail</th>
+                            <th scope="col">Project name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">URL</th>
+                            <th scope="col">Technology</th>
+                            <th scope="col">Completion date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="projects-table-body">
+                        <tr>
+                            <td>
+                                <img
+                                    src="ConsolaJocuri.webp"
+                                    alt="Thumbnail for Consola Jocuri project"
+                                    class="project-thumb"
+                                    loading="lazy"
+                                    width="120"
+                                    height="80"
+                                >
+                            </td>
+                            <td>Consola Jocuri</td>
+                            <td>A console program that helps users install, uninstall and check already installed games.</td>
+                            <td>
+                                <a href="https://github.com/DavidMinciuna/C-Project" target="_blank" rel="noopener noreferrer">
+                                    View project
+                                </a>
+                            </td>
+                            <td>C</td>
+                            <td>2026-05-20</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img
+                                    src="Tony.webp"
+                                    alt="Thumbnail for Portfolio Website project"
+                                    class="project-thumb"
+                                    loading="lazy"
+                                    width="120"
+                                    height="80"
+                                >
+                            </td>
+                            <td>Portfolio Website</td>
+                            <td>A multi-page HTML and CSS website that presents my CV, projects and contact form.</td>
+                            <td>
+                                <a href="index.html">View page</a>
+                            </td>
+                            <td>HTML / CSS</td>
+                            <td>2026-06-01</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img
+                                    src="Good.webp"
+                                    alt="Thumbnail for Sorting Algorithms project"
+                                    class="project-thumb"
+                                    loading="lazy"
+                                    width="120"
+                                    height="80"
+                                >
+                            </td>
+                            <td>Sorting Algorithms Analysis</td>
+                            <td>A Python project that compares several sorting algorithms using execution time tests and charts.</td>
+                            <td>
+                                <a href="https://github.com/DavidMinciuna" target="_blank" rel="noopener noreferrer">
+                                    View project
+                                </a>
+                            </td>
+                            <td>Python</td>
+                            <td>2026-05-28</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img
+                                    src="Chatbot.webp"
+                                    alt="Thumbnail for ChatBot project"
+                                    class="project-thumb"
+                                    loading="lazy"
+                                    width="120"
+                                    height="80"
+                                >
+                            </td>
+                            <td>ChatBot Page</td>
+                            <td>A simple chatbot interface created with HTML, CSS and JavaScript for portfolio interaction.</td>
+                            <td>
+                                <a href="chatbot.html">View page</a>
+                            </td>
+                            <td>JavaScript</td>
+                            <td>2026-06-02</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>2026 · Minciuna David-Florian · FI UVT</p>
+    </footer>
+</body>
+</html>
