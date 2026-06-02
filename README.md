@@ -2,8 +2,8 @@
 
 # Personal CV Website
 [Preview Website](https://davidminciuna.github.io/Web-Design-HW/)
-Prima tema - https://github.com/MinciunaDavid06/HW-EWD1
-A doua - https://github.com/MinciunaDavid06/HW-EWD2
+[TEMA1](https://github.com/MinciunaDavid06/HW-EWD1)
+[TEMA2](https://github.com/MinciunaDavid06/HW-EWD2)
 ## Descriere
 
 Acest proiect reprezintă un **website personal de tip CV/portofoliu**, realizat folosind **HTML, CSS și JavaScript**. Scopul proiectului este prezentarea informațiilor personale, a abilităților, a proiectelor realizate și a unor elemente interactive precum o pagină de overview, o carte de vizită digitală și un chatbot simplu.
